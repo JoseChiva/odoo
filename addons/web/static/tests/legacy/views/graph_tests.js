@@ -85,12 +85,12 @@ QUnit.module('Views', {
         this.data = {
             foo: {
                 fields: {
-                    foo: { string: "Foo", type: "integer", store: true },
+                    foo: { string: "Foo", type: "integer", store: true, sortable: true },
                     bar: { string: "bar", type: "boolean" },
-                    product_id: { string: "Product", type: "many2one", relation: 'product', store: true },
+                    product_id: { string: "Product", type: "many2one", relation: 'product', store: true, sortable: true },
                     color_id: { string: "Color", type: "many2one", relation: 'color' },
                     date: { string: "Date", type: 'date', store: true, sortable: true },
-                    revenue: { string: "Revenue", type: 'integer', store: true },
+                    revenue: { string: "Revenue", type: 'integer', store: true, sortable: true },
                 },
                 records: [
                     { id: 1, foo: 3, bar: true, product_id: 37, date: "2016-01-01", revenue: 1 },
